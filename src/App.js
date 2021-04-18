@@ -4,7 +4,7 @@ import {FaBars,FaTimes } from 'react-icons/fa';
 import Home from "./Home";
 import Contact from "./Contact";
 import Gallery from "./Gallery";
-import {BrowserRouter, Link, Route} from "react-router-dom";
+import {HashRouter, Link, Route} from "react-router-dom";
 
 
 export default class App extends Component {
@@ -30,8 +30,11 @@ export default class App extends Component {
 navlistclick=()=> {
   this.setState({hamburger:true,navlist:"navlist-none"});
 }
+
+  
   
     render() {
+      
         return (
             
 
@@ -39,7 +42,7 @@ navlistclick=()=> {
 
             <div className="App">
               
-                    <BrowserRouter>
+                    <HashRouter>
                       
                           <div className="navbar-container">
                                   <div className="logo">Logo</div>
@@ -62,7 +65,7 @@ navlistclick=()=> {
                           <Route exact path="/contact" component={Contact}/>
                         
                        
-                    </BrowserRouter>
+                    </HashRouter>
                     
                     
                 

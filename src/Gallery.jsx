@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
-import CarousImages from "./CarousImages";
-import Jobs from "./Jobs";
+import CarouselJob01 from "./CarouselJob01";
+import CarouselJob02 from "./CarouselJob02";
+import JobsIkons from "./JobsIkons";
 export default class Gallery extends Component {
     state= {
-        isCarousel:false,
+        isCarousel:true,
     }
     klikk=()=>{
         this.setState({isCarousel:true})
     }
+
+    //     window.innerWidth
     render() {
         let isCarousel=this.state.isCarousel;
         return (
             <div className="slideshow">
                 {isCarousel ?
-                
-                <CarousImages/>
+                <>
+                <CarouselJob01/>
+                <CarouselJob02/>
+                </>
                 :
                
-                <Jobs /> }
+                <JobsIkons /> }
                 
             </div>
         )

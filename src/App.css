@@ -85,10 +85,21 @@
 }
 
 .slideshow {
-  margin: 150px auto;
+  margin: 70px auto;
+  width: 95%;
+}
+.job-container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
 }
-
+.jobimg {
+  width: 100%;
+  padding:10px;
+  display:block;
+  
+}
 
 @media only screen and (min-width: 600px) {
   .hamburger {
