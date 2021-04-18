@@ -1,13 +1,23 @@
 .App {
   color: blue;
-  max-width: 1080px;
+ 
 }
 
 .ikon {
   color: red;
   font-size: 50px;
 }
-
+.x {
+  background-color:rgba(255, 255, 255, 0.247);
+  color: white;
+  font-size: 3vw;
+  position: relative;
+  top: 5vw;
+  left: 95vw;
+  z-index: 10;
+  cursor: pointer;
+  
+}
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -32,6 +42,7 @@
 }
 
 .navlist-vertical {
+  
   font-size: 18px;
   position: absolute;
   top: 40px;
@@ -74,11 +85,12 @@
 }
 
 .slideshow {
-  margin: 100px auto;
+  margin: 150px auto;
   width: 100%;
 }
 
-@media only screen and (min-width: 400px) {
+
+@media only screen and (min-width: 600px) {
   .hamburger {
       display: none;
   }

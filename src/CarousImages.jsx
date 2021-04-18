@@ -4,10 +4,21 @@ import Image1 from "./Images/astronomy-.jpg"
 import Image2 from "./Images/back.jpg"
 import Image3 from "./Images/beast.jpg"
 import Image4 from "./Images/city-planet.jpg"
+import {FaTimes } from 'react-icons/fa';
 export default class CarousImages extends Component {
+
+    handleclick=()=> {
+        
+        console.log("close carousel");
+    }
+
     render() {
         return (
             <>
+             
+
+                <FaTimes className="x"  onClick={this.handleclick} />
+             
                 <Carousel >
                     <Carousel.Item>
             <img
@@ -16,7 +27,8 @@ export default class CarousImages extends Component {
             alt="First slide"
             />
             <Carousel.Caption>
-            <h3>First slide label</h3>
+           
+            <h3 >First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
         </Carousel.Item>
